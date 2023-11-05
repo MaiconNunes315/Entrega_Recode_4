@@ -1,0 +1,8 @@
+package com.valonge.controller;
+
+public class CadastrarUsuario {
+
+	RequestDispatcher dispatcher = req.getRequestDispatcher("usuario/mostraUsuarios.jsp");
+			dispatcher.forward(req, res);	
+
+}

@@ -1,0 +1,32 @@
+package com.valonge.controller;
+
+import java.io.IOException;
+import com.valonge.model.Destino;
+import com.valonge.model.DestinoDAO;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class CadastrarDestinoController
+ */
+@WebServlet("/destino/cadastrar")
+public class CadastrarDestinoController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+ 
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		Destino destino = new Destino();
+		DestinoDAO dao = new DestinoDAO();
+		destino.setCidade(req.getParameter("inputCidade"));
+		destino.setEstado(req.getParameter("inputEstado"));
+		destino.setPais(req.getParameter("inputPais"));
+		destino.setDetalhes(req.getParameter("inputDestalhes"));
+		destino.setImg(req.getParameter("inputImg"));
+		
+		dao.createDestino(destino);
+	}
+
+}

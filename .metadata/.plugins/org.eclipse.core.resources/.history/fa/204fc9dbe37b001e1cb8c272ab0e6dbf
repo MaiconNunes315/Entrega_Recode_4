@@ -1,0 +1,5 @@
+package com.valonge.controller;
+
+public class CadastrarUsuario {
+
+}

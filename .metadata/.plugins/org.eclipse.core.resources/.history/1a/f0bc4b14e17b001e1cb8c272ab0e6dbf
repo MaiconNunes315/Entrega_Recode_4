@@ -1,0 +1,576 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vá longe - Transformando sua viagem em uma experiência incrivel</title>
+    <link rel="stylesheet" href="assets/css/style_home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Classe com "_" substituindo "-" criado no css, não no bootstrap  -->
+    <!-- Criando o cabeçalho -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo va longe"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse  justify-content-end text-center" id="navbarSupportedContent">
+
+                
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link style_link_hover" aria-current="page" href="usuarios">
+                                Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style_link_hover" href="contact.html">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title></title>
+                                        <g fill="none" fill-rule="evenodd" id="页面-1" stroke="none" stroke-width="1">
+                                            <g id="导航图标" transform="translate(-251.000000, -207.000000)">
+                                                <g id="编组" transform="translate(251.000000, 207.000000)">
+                                                    <rect fill="#FFFFFF" fill-opacity="0.01" fill-rule="nonzero"
+                                                        height="24" id="矩形" width="24" x="0" y="0"></rect>
+                                                    <path
+                                                        d="M18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8"
+                                                        id="路径"></path>
+                                                    <path
+                                                        d="M18,16 L18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8"
+                                                        id="路径" stroke="#FFC107" stroke-linejoin="round"
+                                                        stroke-width="1.5"></path>
+                                                    <path d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16"
+                                                        id="路径"></path>
+                                                    <path
+                                                        d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16 L6,16"
+                                                        id="路径" stroke="#FFC107" stroke-linejoin="round"
+                                                        stroke-width="1.5"></path>
+                                                    <path
+                                                        d="M6,16 L6,15.75 L6,14.5 L6,12 L6,8 C6,4.68629 8.6863,2 12,2 C15.3137,2 18,4.68629 18,8 L18,16 C18,19.3137 15.3137,22 12,22"
+                                                        id="路径" stroke="#FFC107" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style_link_hover" href="destiny.html">
+                                <svg fill="#FFC107" width="30px" height="30px" viewBox="0 0 24.00 24.00"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#FFC107"
+                                    stroke-width="0.00024000000000000003">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="Plane">
+                                            <path
+                                                d="M11.9,20.936H10.85a.911.911,0,0,1-.9-1.023l.693-5.548H7.3l-.513.9a1.329,1.329,0,0,1-.992.657L5.1,16a.9.9,0,0,1-.8-.31.912.912,0,0,1-.185-.839l.774-2.769a.318.318,0,0,0,0-.173L4.114,9.145A.909.909,0,0,1,5.1,8l.695.083a1.331,1.331,0,0,1,.992.656l.513.9h3.34L9.946,4.088a.911.911,0,0,1,.9-1.024H11.9a1.327,1.327,0,0,1,1.236.857l2.144,5.714h1.046a8.5,8.5,0,0,1,1.758.184,2.166,2.166,0,0,1,1.429.9,2.209,2.209,0,0,1,.365,1.7A2.288,2.288,0,0,1,17.95,14.2l-.16.024a10.926,10.926,0,0,1-1.721.137h-.787l-2.144,5.714A1.327,1.327,0,0,1,11.9,20.936Zm-.951-1H11.9a.323.323,0,0,0,.3-.209l2.214-5.905a.71.71,0,0,1,.661-.457h.991a9.946,9.946,0,0,0,1.567-.125l.16-.025a1.3,1.3,0,0,0,1.1-.979,1.227,1.227,0,0,0-.2-.937,1.2,1.2,0,0,0-.793-.5,7.647,7.647,0,0,0-1.577-.167h-1.25a.711.711,0,0,1-.661-.456L12.2,4.273a.323.323,0,0,0-.3-.209h-.951l.722,5.778a.7.7,0,0,1-.7.793H7.127a.7.7,0,0,1-.614-.359l-.6-1.045a.32.32,0,0,0-.241-.16L5.113,9l.738,2.64a1.34,1.34,0,0,1,0,.711L5.113,15l.562-.067a.32.32,0,0,0,.241-.16l.6-1.049a.7.7,0,0,1,.612-.355h3.846a.7.7,0,0,1,.7.794ZM7.386,14.212l0,.005Zm3.295-.179v0Zm0-4.067v0Zm-3.3-.186,0,0Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                Destinos
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fim do cabeçalho -->
+    <section class="section_img">
+        <div class="folder_container d-flex flex-column justify-content-center mb-auto ms-5">
+            <div class="d-flex flex-column mt-3 justify-content-center">
+                <h2>Descubra o Mundo com a Nossa Agência de Viagens!</h2>
+                <h4>Seja aventureiro(a) ou em busca de relaxamento, nossa agência de viagens
+                    é
+                    sua parceira ideal para desvendar os segredos do mundo. Oferecemos roteiros exclusivos,
+                    acomodações
+                    de luxo e experiências inesquecíveis. Viaje com segurança, conforto e uma equipe dedicada ao seu
+                    bem-estar. Aventure-se em destinos exóticos e viva momentos únicos</h4>
+                <!-- <p class="fs-4">Liberte-se da rotina e embarque em uma jornada única! Descubra paisagens
+                        deslumbrantes, culturas
+                        fascinantes e momentos inesquecíveis. Aproveite agora a oportunidade de viver aventuras
+                        extraordinárias
+                        com nossas irresistíveis ofertas de viagens. Seu destino dos sonhos está apenas a um passo de
+                        distância.
+                    </p> -->
+
+            </div>
+
+            <a href="destiny.html" class="btn btn-primary">Descubra Agora!</a>
+        </div>
+
+
+    </section>
+
+
+    <main class="px-5 mb-5">
+
+        <!-- container das informações -->
+
+        <section class="d-flex justify-content-around flex-wrap info_container p-3">
+            <span class=""><img class="pe-2" src="assets/images/aviao.png" alt="icone aviao" />Viagens para qualquer
+                lugar do mundo</span>
+            <span><img class="pe-2" src="assets/images/carteira.png" alt="icone carteira">Parcelamento em até 12x sem
+                juros</span>
+            <span><img class="pe-2" src="assets/images/seguranca.png" alt="icone de cartão com cadeado">Sua compra
+                totalmente
+                segura</span>
+        </section>
+
+        <section class="container d-flex flex-column gap-5 my-5">
+            <div class="card-info-trip">
+                <img src="assets/images/card1.jpg" alt="Foto de praia paradisiaca">
+
+                <div>
+                    <h2>Oferta Imperdível - Pacotes de Praia com Descontos Incríveis.</h2>
+                    <p>Aproveite a temporada de sol e mar com nossas ofertas especiais para destinos de praia
+                        deslumbrantes. Reserve agora e economize até 30% nos pacotes completos, que incluem passagens,
+                        hospedagens e passeios emocionantes. Garanta seu lugar no paraíso e desfrute de momentos
+                        relaxantes e revigorantes.</p>
+                    <button class="btn btn-primary" type="button">Reserve Já</button>
+                </div>
+            </div>
+
+            <div class="card-info-trip">
+                <img src="assets/images/card2.jpg" alt="Foto de praia paradisiaca">
+
+                <div>
+                    <h2>Viaje no Tempo - Explore a História de Destinos Culturais</h2>
+                    <p>Se você é fascinado(a) pela história e cultura dos lugares, temos o itinerário perfeito para
+                        você! Visite cidades encantadoras, repletas de monumentos e maravilhas arquitetônicas. Nossos
+                        guias especializados conduzirão você através de séculos de histórias intrigantes. Embarque nessa
+                        jornada única e sinta-se parte do passado!</p>
+                    <button class="btn btn-primary" type="button">Reserve Já</button>
+                </div>
+            </div>
+
+            <div class="card-info-trip">
+                <img src="assets/images/card3.jpg" alt="Foto de praia paradisiaca">
+
+                <div>
+                    <h2>Emoção e Adrenalina - Destinos Perfeitos para Aventureiros</h2>
+                    <p>Para os espíritos aventureiros, temos destinos que testarão seus limites e proporcionarão
+                        experiências eletrizantes. Explore trilhas selvagens, mergulhe em rios cristalinos e desafie-se
+                        em esportes radicais. Oferecemos pacotes personalizados para aqueles que buscam o máximo de
+                        emoção</p>
+                    <button class="btn btn-primary" type="button">Reserve Já</button>
+                </div>
+            </div>
+
+            <div class="card-info-trip">
+                <img src="assets/images/card4.jpg" alt="Foto de praia paradisiaca">
+
+                <div>
+                    <h2>Momentos Inesquecíveis em Família - Viagens para Todos.</h2>
+                    <p>Nossa agência tem as melhores opções para viagens em família! Proporcionamos momentos de alegria
+                        e conexão, com roteiros cuidadosamente selecionados para todas as idades. Desfrute de parques
+                        temáticos, atividades recreativas e destinos amigáveis para crianças. Crie memórias
+                        inesquecíveis com quem você ama.</p>
+                    <button class="btn btn-primary" type="button">Reserve Já</button>
+                </div>
+            </div>
+
+            <div class="card-info-trip">
+                <img src="assets/images/card5.jpg" alt="Foto de praia paradisiaca">
+
+                <div>
+                    <h2>Experiências Sofisticadas - Viagens de Luxo para os Exigentes.</h2>
+                    <p>Oferecemos um toque de requinte para viajantes que apreciam o luxo. Nossos pacotes exclusivos
+                        incluem hospedagens em hotéis de alto padrão, serviços personalizados e experiências únicas que
+                        só os viajantes mais exigentes podem desfrutar. Mime-se com o melhor que o mundo tem a oferecer.
+                    </p>
+                    <button class="btn btn-primary" type="button">Reserve Já</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards das promoções -->
+        <section>
+
+            <div class="d-flex justify-content-between">
+                <h4>Promoções</h4>
+                <a class="link icon icon-link-hover text-decoration-none" href="sales.html">
+                    Ver mais
+                    <img class="img_link bi" aria-hidden="true" src="./assets/images/seta.png" alt=""></a>
+            </div>
+
+            <div class="mt-3 d-flex flex-wrap justify-content-evenly gap-5 ">
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-warning">Pacotes Nacionais</p>
+                        <p class="btn btn-danger">-50%</p>
+                    </div>
+                    <div class="card_sales_img">
+                        <img src="assets/images/bauneario.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bauneário Camboriú</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala"> 4 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>Passagem aérea</li>
+                            <li>Hospedagem</li>
+                            <li>Café da manhã</li>
+                            <li>Open bar</li>
+                            <li>Saindo de São Paulo</li>
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 2150,00</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 1075,00</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-primary">Pacotes Internacionais</p>
+                        <p class="btn btn-danger">-20%</p>
+                    </div>
+                    <div class="card_sales_img">
+                        <img src="assets/images/dubai.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala"> 7 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>Passagem aérea</li>
+                            <li>Hospedagem</li>
+                            <li>Saindo de Rio de Janeiro</li>
+
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 15.850,90</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 12.680,72</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-warning">Pacotes Nacionais</p>
+                        <p class="btn btn-danger">-10%</p>
+                    </div>
+                    <div class="card_sales_img">
+                        <img src="assets/images/cruzeiro.jpeg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Cruzeiro Preziosa - Ilha Bela</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala"> 4 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>All incluse</li>
+                            <li>Saindo de Santos</li>
+                            <li>Ilhabela</li>
+                            <li>Ilha grande</li>
+                            <li>Desembarque Santos</li>
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 3250,90</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 2925,81</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-warning">Pacotes Nacionais</p>
+                        <p class="btn btn-danger">-30%</p>
+                    </div>
+                    <div class="card_sales_img">
+                        <img src="assets/images/rj.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Rio de Janeiro</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala">
+                            3 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>Passagem aérea</li>
+                            <li>Hospedagem</li>
+                            <li>Café da manhã</li>
+                            <li>Saindo de São Paulo</li>
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 2150,00</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 1505,00</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-primary">Pacotes Internacionais</p>
+                        <p class="btn btn-danger">-15%</p>
+                    </div>
+                    <div class="card_sales_img">
+
+                        <img src="assets/images/cancun.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cancun</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala"> 5 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>Passagem aérea</li>
+                            <li>Hospedagem</li>
+                            <li>Café da manhã</li>
+                            <li>Saindo de Florianópolis</li>
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 8250,00</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 7012,50</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card position-relative card_sale" style="width: 18rem;">
+                    <div class="position-absolute d-flex flex-column btn_card_absolute">
+                        <p class="btn btn-primary">Pacotes Internacionais</p>
+                        <p class="btn btn-danger">-10%</p>
+                    </div>
+                    <div class="card_sales_img">
+
+                        <img src="assets/images/roma.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Roma</h5>
+                        <p class="card-text"><img class="me-1" width="22px" src="assets/images/mala.png"
+                                alt="icone mala"> 6 diárias
+                        </p>
+                        <ul class="card_list_sale">
+                            <li>Passagem aérea</li>
+                            <li>Hospedagem</li>
+                            <li>Café da manhã</li>
+                            <li>Saindo de Salvador</li>
+                        </ul>
+
+                        <div>
+                            <span>
+                                <s>de R$ 17.044,00</s>
+                            </span>
+
+                            <div><small>por</small>
+                                <span class="fs-3 card_sale_price text-warning">R$ 15.339,60</span>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Cards destinos -->
+        <section class="mt-5">
+            <div class="d-flex justify-content-between">
+                <h4>Destinos</h4>
+                <a class="link icon icon-link-hover text-decoration-none" href="destinos.html">
+                    Ver mais
+                    <img class="img_link bi" aria-hidden="true" src="./assets/images/seta.png" alt=""></a>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-evenly gap-5 mt-3">
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/paris.jpg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Paris</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/vegas.jpg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Las Vegas</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/maceio.jpeg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Maceió</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/orlando.jpg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Orlando</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/aruba.jpeg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Aruba</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+                <div class="card position-relative overflow-hidden card_destiny" style="width: 18rem;">
+
+                    <img width="100%" height="100%" src="assets/images/lisboa.jpg" class="position-absolute" alt="...">
+                    <div class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
+                        <p class="text-warning mb-0">PACOTES PARA</p>
+                        <h3 class="text-white fs-1">Lisboa</h3>
+                        <a href="#" class="btn btn-warning text-white">Conferir</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer class="py-5 d-flex flex-column align-items-center">
+        <div class="container d-flex justify-content-center flex-wrap gap-5">
+
+            <div>
+                <h4>Vá longe</h4>
+
+                <p>
+                    <a class="text-decoration-none text-dark footer_link" href="sobre.html">Sobre nós</a>
+                </p>
+
+                <p>SAC 21 2222-2222</p>
+                <p>Atendimento Seg. a Sex: 09h às 19h</p>
+                <p>CNPJ: 42.047.067/0001-21</p>
+            </div>
+
+            <div>
+                <h4>Formas de pagamento</h4>
+                <img width="300px" src="https://images.tcdn.com.br/img/editor/up/365915/bandeiras_cartoes.png" alt="" />
+
+            </div>
+
+            <div>
+                <h4>Viaje com a gente</h4>
+                <p> <a href="sales.html" class="text-decoration-none text-dark footer_link">Promoção</a> </p>
+                <p> <a href="destiny.html" class="text-decoration-none text-dark footer_link">Destinos</a> </p>
+                <p> <a href="contact.html" class="text-decoration-none text-dark footer_link">Fale conosco</a> </p>
+            </div>
+
+            <div>
+                <h4>Siga nossas redes</h4>
+                <a href="#" class="text-decoration-none">
+
+                    <img src="assets/images/instagram.png" alt="icone instagram">
+                </a>
+                <a href="#" class="text-decoration-none">
+
+                    <img src="assets/images/facebook.png" alt="icone facebook">
+                </a>
+                <a href="#" class="text-decoration-none">
+
+                    <img src="assets/images/youtube.png" alt="icone youtube">
+                </a>
+            </div>
+        </div>
+        <div class="">
+            Feito por:
+            <a class="text-decoration-none text-dark" href="https://www.linkedin.com/in/maicon-nunes/" target="_blank">
+                Maicon Nunes
+                <img width="40px" src="assets/images/linkedin.png" alt="icone linkedin">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+package com.valonge.controller;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.valonge.enums.Estado;
+import com.valonge.model.Usuario;
+import com.valonge.model.UsuarioDAO;
+
+/**
+ * Servlet implementation class ReadUsuario
+ */
+@WebServlet("/usuario/editar")
+public class EditarUsuarioController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	UsuarioDAO usersDao = new UsuarioDAO();
+       
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+int id = Integer.parseInt(req.getParameter("id"));
+	Usuario users =  usersDao.searchUsuarios(id);
+	
+	String endereco[] = users.getEndereco().split(";");
+	
+		req.setAttribute("users", users);
+		req.setAttribute("Estados", Estado.values());
+		req.setAttribute("endereco", endereco);
+		RequestDispatcher dispatcher = req.getRequestDispatcher("editarUsuario.jsp");
+		dispatcher.forward(req, res);		
+		
+	}
+
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		Usuario usuario = new Usuario();
+		
+		usuario.setNome(req.getParameter("inputNome"));
+		usuario.setCpf(req.getParameter("inputCpf"));
+		usuario.setRg(req.getParameter("inputRg"));
+		usuario.setEmail(req.getParameter("inputEmail"));
+		usuario.setEstado(req.getParameter("inputEstado"));
+		usuario.setSenha(req.getParameter("inputSenha"));
+		usuario.setTelefone(req.getParameter("inputTel"));
+		usuario.setTipoUsuario(req.getParameter("inputUsuario"));
+		usuario.setEndereco(req.getParameter("inputEndereco"));
+		LocalDate nascimento = LocalDate.parse(req.getParameter("inputNascimento"));
+		usuario.setDataNascimento(nascimento);
+		usuario.setCriado_em(LocalDateTime.parse(req.getParameter("InputData")));
+		String endereco = req.getParameter("inputEndereco")+
+							"; " + req.getParameter("inputComplemento")
+							+"; " +req.getParameter("inputCidade")
+							+"; " +req.getParameter("inputCep");
+		usuario.setEndereco(endereco);
+		
+		usersDao.updateUsuario(usuario, req.getParameter("inputId"));
+			res.sendRedirect("usuario");
+	}
+
+}
