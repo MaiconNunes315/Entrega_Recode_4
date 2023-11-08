@@ -6,7 +6,8 @@
 -- Generation Time: 08-Nov-2023 às 01:41
 -- Versão do servidor: 10.1.38-MariaDB
 -- versão do PHP: 5.6.40
-
+CREATE DATABASE valonge;
+USE valonge;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -22,15 +23,6 @@ SET time_zone = "+00:00";
 -- Database: `valonge`
 --
 
-DELIMITER $$
---
--- Functions
---
-CREATE DEFINER=`root`@`localhost` FUNCTION `calculaPrecoTotal` (`desconto` INT, `preco` DECIMAL(10,2)) RETURNS DECIMAL(10,2) BEGIN 
-RETURN preco - (desconto /100 * preco); 
-END$$
-
-DELIMITER ;
 
 -- --------------------------------------------------------
 
