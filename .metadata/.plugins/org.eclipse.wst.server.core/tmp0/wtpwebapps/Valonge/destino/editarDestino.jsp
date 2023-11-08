@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="jstl" %>
 <!DOCTYPE html>
 <html>
@@ -19,7 +18,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
 	rel="stylesheet">
-<title>VÃ¡ longe - Editar destinos</title>
+<title>Vá longe - Editar destinos</title>
 <style>
 #inputDetalhes {
 	resize: none;
@@ -63,8 +62,8 @@
 	</header>
 	<div class="container my-5 py-5 border border-primary-subtle rounded">
 
-		<form class="row g-3" action="cadastrar" method="POST">
-
+		<form class="row g-3" action="editar" method="post">
+	<input type="hidden" name="id" value="${destino.getId_destino()}">
 			<div class="col-6">
 				<label for="inputPais" class="form-label">Pais</label> <input
 					type="text" required class="form-control" id="inputPais"
@@ -97,12 +96,12 @@
 					${destino.getDetalhes()}
       </textarea>
       <div class="col-md-12 my-2">
-      <h6>Confira sua imagem apÃ³s colocar o link </h6>
+      <h6>Confira sua imagem após colocar o link </h6>
       <img width="200px" id="img"/>
       </div>
 			</div>
 			<div class="col-12">
-				<button type="submit" class="btn btn-primary">Cadastrar</button>
+				<button type="submit" class="btn btn-primary">Editar</button>
 			</div>
 		</form>
 	</div>
@@ -110,15 +109,15 @@
 		<div class="container d-flex justify-content-center flex-wrap gap-5">
 
 			<div>
-				<h4>VÃ¡ longe</h4>
+				<h4>Vá longe</h4>
 
 				<p>
 					<a class="text-decoration-none text-dark footer_link"
-						href="../sobre.html">Sobre nÃ³s</a>
+						href="../sobre.html">Sobre nós</a>
 				</p>
 
 				<p>SAC 21 2222-2222</p>
-				<p>Atendimento Seg. a Sex: 09h Ã s 19h</p>
+				<p>Atendimento Seg. a Sex: 09h às 19h</p>
 				<p>CNPJ: 42.047.067/0001-21</p>
 			</div>
 

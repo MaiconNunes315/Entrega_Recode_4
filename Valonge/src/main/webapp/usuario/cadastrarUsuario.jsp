@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="jstl"%>
 <!DOCTYPE html>
 <html>
@@ -19,7 +18,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
 	rel="stylesheet">
-<title>V√° longe - Cadastre-se</title>
+<title>V· longe - Cadastre-se</title>
 </head>
 <body>
 <header>
@@ -95,7 +94,7 @@
     </div>
   
       <div class="col-4">
-        <label for="inputEndereco" class="form-label">Endere√ßo</label>
+        <label for="inputEndereco" class="form-label">EndereÁo</label>
         <input type="text" required maxlength="50" class="form-control" id="inputEndereco" placeholder="Av Aberlado Bueno 150"
           name="inputEndereco">
       </div>
@@ -127,21 +126,21 @@
     </div>
   </form>
   <div>
-  	<div class="alert alert-primary my-2"><a class="text-decoration-none" href="../usuario">Mostrar Usu√°rios cadastrados</a></div>
+  	<div class="alert alert-primary my-2"><a class="text-decoration-none" href="../usuario">Mostrar Usu·rios cadastrados</a></div>
   </div>
   </div>
     <footer class="py-5 d-flex flex-column align-items-center">
         <div class="container d-flex justify-content-center flex-wrap gap-5">
 
             <div>
-                <h4>V√° longe</h4>
+                <h4>V· longe</h4>
 
                 <p>
-                    <a class="text-decoration-none text-dark footer_link" href="../sobre.html">Sobre n√≥s</a>
+                    <a class="text-decoration-none text-dark footer_link" href="../sobre.html">Sobre nÛs</a>
                 </p>
 
                 <p>SAC 21 2222-2222</p>
-                <p>Atendimento Seg. a Sex: 09h √†s 19h</p>
+                <p>Atendimento Seg. a Sex: 09h ‡s 19h</p>
                 <p>CNPJ: 42.047.067/0001-21</p>
             </div>
 
@@ -183,7 +182,7 @@
 
       var v = i.value;
 
-      if (isNaN(v[v.length - 1])) { // impede entrar outro caractere que n√£o seja n√∫mero
+      if (isNaN(v[v.length - 1])) { // impede entrar outro caractere que n„o seja n˙mero
         i.value = v.substring(0, v.length - 1);
         return;
       }

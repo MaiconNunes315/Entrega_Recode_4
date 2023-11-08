@@ -61,7 +61,7 @@
 	</header>
 	<div class="container my-5 py-5 border border-primary-subtle rounded">
 
-		<form class="row g-3" action="cadastrar" method="POST">
+		<form class="row g-3" action="cadastrar" method="post">
 
 			<div class="col-6">
 				<label for="inputPais" class="form-label">Pais</label> <input

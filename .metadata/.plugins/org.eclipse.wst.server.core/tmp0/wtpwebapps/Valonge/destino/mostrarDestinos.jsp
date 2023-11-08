@@ -79,8 +79,8 @@
 			
 			<div
 				class="z-1 d-flex h-100 flex-column justify-content-end align-items-center mb-3">
-				<p class="text-light mb-0">${destino.getCidade() }</p>
-				<h3 class="text-white fs-1">${destino.getPais() }</h3>
+				<p class="text-light mb-0 bg-primary rounded p-1">${destino.getCidade() }</p>
+				<h3 class="text-white text-center fs-1">${destino.getPais() }</h3>
 			</div>
 		</div>
 	</jstl:forEach>
