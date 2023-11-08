@@ -86,7 +86,6 @@
 	</jstl:forEach>
 	</div>
 
-
 	<footer class="py-5 d-flex flex-column align-items-center">
 		<div class="container d-flex justify-content-center flex-wrap gap-5">
 
